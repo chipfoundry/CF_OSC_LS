@@ -1,0 +1,91 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 0
+<< metal1 >>
+rect 31701 17433 31895 17479
+rect 31701 17337 31895 17383
+rect 31701 17241 31895 17287
+rect 31701 17145 31895 17191
+rect 31701 18018 31895 18046
+rect 31701 17922 31895 17950
+rect 31701 17826 31895 17854
+rect 31701 17730 31895 17758
+rect 31701 17634 31895 17662
+rect 31701 18127 31894 18155
+rect 31701 18223 31894 18251
+rect 31701 22265 31895 22317
+rect 31701 21434 31895 21486
+rect 31701 22669 31895 22697
+rect 31595 32351 31895 32397
+rect 31579 27250 31895 27296
+rect 31701 17538 31895 17566
+rect 31579 27393 31895 27445
+rect 31701 18320 31895 18348
+rect 31701 17058 31895 17086
+rect 31701 22473 31895 22501
+rect 31701 18417 31895 18445
+rect 31701 22964 31895 22992
+<< metal2 >>
+rect 24606 0 24798 80
+rect 24157 0 24285 80
+rect 24383 0 24511 80
+rect 23907 0 24099 80
+<< labels >>
+rlabel metal1 s 31701 17433 31895 17479 4 trim100k[3]
+port 1 nsew
+rlabel metal1 s 31701 17337 31895 17383 4 trim100k[2]
+port 2 nsew
+rlabel metal1 s 31701 17241 31895 17287 4 trim100k[1]
+port 3 nsew
+rlabel metal1 s 31701 17145 31895 17191 4 trim100k[0]
+port 4 nsew
+rlabel metal1 s 31701 18018 31895 18046 4 trim1k[3]
+port 5 nsew
+rlabel metal1 s 31701 17922 31895 17950 4 trim1k[2]
+port 6 nsew
+rlabel metal1 s 31701 17826 31895 17854 4 trim1k[1]
+port 7 nsew
+rlabel metal1 s 31701 17730 31895 17758 4 trim1k[0]
+port 8 nsew
+rlabel metal1 s 31701 17634 31895 17662 4 coarsetrim[2]
+port 9 nsew
+rlabel metal1 s 31701 18127 31894 18155 4 coarsetrim[1]
+port 10 nsew
+rlabel metal1 s 31701 18223 31894 18251 4 coarsetrim[0]
+port 11 nsew
+rlabel metal2 s 24606 0 24798 80 4 vpwr
+port 12 nsew
+rlabel metal2 s 24157 0 24285 80 4 vpb
+port 13 nsew
+rlabel metal2 s 24383 0 24511 80 4 vnb
+port 14 nsew
+rlabel metal2 s 23907 0 24099 80 4 vgnd
+port 15 nsew
+rlabel metal1 s 31701 22265 31895 22317 4 clkout_div3
+port 16 nsew
+rlabel metal1 s 31701 21434 31895 21486 4 clkout2
+port 17 nsew
+rlabel metal1 s 31701 22669 31895 22697 4 clkout1
+port 18 nsew
+rlabel metal1 s 31595 32351 31895 32397 4 turbo
+port 19 nsew
+rlabel metal1 s 31579 27250 31895 27296 4 stup
+port 20 nsew
+rlabel metal1 s 31701 17538 31895 17566 4 satbiasb
+port 21 nsew
+rlabel metal1 s 31579 27393 31895 27445 4 pdb
+port 22 nsew
+rlabel metal1 s 31701 18320 31895 18348 4 pd_mode
+port 23 nsew
+rlabel metal1 s 31701 17058 31895 17086 4 hs
+port 24 nsew
+rlabel metal1 s 31701 22473 31895 22501 4 En100k
+port 25 nsew
+rlabel metal1 s 31701 18417 31895 18445 4 En1k
+port 26 nsew
+rlabel metal1 s 31701 22964 31895 22992 4 DivEn
+port 27 nsew
+<< properties >>
+string FIXED_BBOX 0 0 31895 33067
+<< end >>

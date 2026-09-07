@@ -1,0 +1,24 @@
+info:
+  name: CF_OSC_LS
+  description: Ultra-low-power low-speed oscillator (CF_OSC_LS) is a ChipFoundry
+    hard-macro blackbox on SkyWater 130 nm.
+  repo: https://github.com/chipfoundry/CF_OSC_LS
+  owner: ChipFoundry
+  license: proprietary
+  author: ChipFoundry
+  email: support@chipfoundry.io
+  version: 0.2.0
+  date: 9-6-2026
+  category: analog
+  tags:
+  - CF_OSC_LS
+  bus: n/a
+  type: hard
+  maturity: Production
+  width: '189.475'
+  height: '195.335'
+  technology: sky130
+  digital_supply_voltage: n/a
+  analog_supply_voltage: n/a
+  clock_freq_mhz: '0.1'
+  cell_count: '2'
