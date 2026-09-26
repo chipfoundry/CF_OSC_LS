@@ -2,7 +2,7 @@
 
 > Ultra-low-power low-speed oscillator
 
-Draft for designer review. The public GDS is an abstract; ChipFoundry
+The public GDS is an abstract; ChipFoundry
 substitutes protected full geometry at tapeout.
 
 This package ships an SRAM-style PG wrap `CF_OSC_LS` around analog leaf
@@ -27,14 +27,7 @@ Macro size is 189.475 × 195.335 µm (15 µm halo around analog leaf
 
 ```bash
 pip install cf-ipm
-ipm install CF_OSC_LS --version 0.2.0 --include-drafts
-```
-
-Until the marketplace listing is published, install from a local catalog
-override the same way `cf-osc-ls-test-project` does:
-
-```bash
-ipm install CF_OSC_LS --version 0.2.0 --include-drafts --local-file ip/catalog.json
+ipm install CF_OSC_LS --version 0.2.1
 ```
 
 Use `hdl/gl/CF_OSC_LS.v` as the customer blackbox, `layout/lef/CF_OSC_LS.lef`
@@ -43,12 +36,15 @@ public wrap. `CF_OSC_LS_core` is the analog leaf (empty Verilog, pin-only
 abstract). ChipFoundry substitutes vault GDS into `CF_OSC_LS_core` at tapeout.
 P&R uses the wrap LEF (`vpwr` / `vgnd` only).
 
+Functional sim compiles `verify/beh_model/CF_OSC_LS_core.v` **instead of** the empty `hdl/gl/CF_OSC_LS_core.v` stub. See `verify/beh_model/README.md`.
+
 ## Features
 
 - Independently trimmed ~1 kHz (`clkout1`) and ~100 kHz (`clkout2`) class clocks
 - Divided output `clkout_div3` with `DivEn`
 - Output enables `En1k` / `En100k` and power-down `pdb`
 - Coarse trim `coarsetrim[2:0]` plus per-output `trim1k[3:0]` / `trim100k[3:0]`
+- Ideal Verilog behavioral model under `verify/beh_model/` for functional sim
 - Customer cell `CF_OSC_LS` 189.475 × 195.335 µm (15 µm halo around analog leaf 159.475 × 165.335 µm)
 - Chip PDN is `vpwr` / `vgnd`. Well taps `vpb` / `vnb` are tied inside the wrap.
 
@@ -97,7 +93,14 @@ In OpenLane / LibreLane, hook chip PDN with
 ## Limitations and Open Issues
 
 - Verilog in `hdl/gl/CF_OSC_LS.v` is a structural wrap around an empty
-  `CF_OSC_LS_core` blackbox, not a SPICE-accurate model.
+  `CF_OSC_LS_core` blackbox. Functional sim uses `verify/beh_model/CF_OSC_LS_core.v` (ideal model, not SPICE).
 - Liberty is not in this first wrap drop. P&R uses the wrap LEF.
 - Companion process-variant analog tops stay foundry-only. This package
   ships the wrap around the public analog leaf.
+
+## Release History
+
+| Version | Date | Notes |
+|---|---|---|
+| 0.2.0 | 2026-09-06 | First SRAM-style PG-wrapped package. |
+| 0.2.1 | 2026-09-26 | Core fill-exclude covers so fillgen does not overwrite the analog. Ideal behavioral model for functional sim. |

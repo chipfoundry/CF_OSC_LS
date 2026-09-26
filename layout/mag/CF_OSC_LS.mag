@@ -720,72 +720,64 @@ rlabel metal1 s 34701 21127 37895 21155 4 coarsetrim[1]
 port 10 nsew
 rlabel metal1 s 34701 21223 37895 21251 4 coarsetrim[0]
 port 11 nsew
-rlabel metal2 s 27606 3000 27798 3080 4 vpwr
-port 12 nsew
-rlabel metal2 s 27606 2648 27798 3080 4 vpwr
-port 13 nsew
 rlabel metal3 s 25262 2648 27798 2744 4 vpwr
-port 14 nsew
+port 12 nsew
 rlabel metal3 s 246 37127 37649 37747 4 vpwr
-port 15 nsew
+port 13 nsew
 rlabel metal4 s 1000 0 1620 39067 4 vpwr
-port 16 nsew
+port 14 nsew
 rlabel metal4 s 7000 0 7620 39067 4 vpwr
-port 17 nsew
+port 15 nsew
 rlabel metal4 s 13000 0 13620 39067 4 vpwr
-port 18 nsew
+port 16 nsew
 rlabel metal4 s 19000 0 19620 39067 4 vpwr
-port 19 nsew
+port 17 nsew
 rlabel metal4 s 25000 0 25620 39067 4 vpwr
-port 20 nsew
+port 18 nsew
 rlabel metal4 s 31000 0 31620 39067 4 vpwr
-port 21 nsew
+port 19 nsew
 rlabel metal4 s 37000 0 37620 39067 4 vpwr
-port 22 nsew
-rlabel metal2 s 26907 3000 27099 3080 4 vgnd
-port 23 nsew
-rlabel metal2 s 26907 2824 27099 3080 4 vgnd
-port 24 nsew
+port 20 nsew
 rlabel metal3 s 26907 2824 28358 2920 4 vgnd
-port 25 nsew
+port 21 nsew
 rlabel metal3 s 246 36167 37649 36787 4 vgnd
-port 26 nsew
+port 22 nsew
 rlabel metal4 s 4000 0 4620 39067 4 vgnd
-port 27 nsew
+port 23 nsew
 rlabel metal4 s 10000 0 10620 39067 4 vgnd
-port 28 nsew
+port 24 nsew
 rlabel metal4 s 16000 0 16620 39067 4 vgnd
-port 29 nsew
+port 25 nsew
 rlabel metal4 s 22000 0 22620 39067 4 vgnd
-port 30 nsew
+port 26 nsew
 rlabel metal4 s 28000 0 28620 39067 4 vgnd
-port 31 nsew
+port 27 nsew
 rlabel metal4 s 34000 0 34620 39067 4 vgnd
-port 32 nsew
+port 28 nsew
 rlabel metal1 s 34701 25265 37895 25317 4 clkout_div3
-port 33 nsew
+port 29 nsew
 rlabel metal1 s 34701 24434 37895 24486 4 clkout2
-port 34 nsew
+port 30 nsew
 rlabel metal1 s 34701 25669 37895 25697 4 clkout1
-port 35 nsew
+port 31 nsew
 rlabel metal1 s 34595 35351 37895 35397 4 turbo
-port 36 nsew
+port 32 nsew
 rlabel metal1 s 34579 30250 37895 30296 4 stup
-port 37 nsew
+port 33 nsew
 rlabel metal1 s 34701 20538 37895 20566 4 satbiasb
-port 38 nsew
+port 34 nsew
 rlabel metal1 s 34579 30393 37895 30445 4 pdb
-port 39 nsew
+port 35 nsew
 rlabel metal1 s 34701 21320 37895 21348 4 pd_mode
-port 40 nsew
+port 36 nsew
 rlabel metal1 s 34701 20058 37895 20086 4 hs
-port 41 nsew
+port 37 nsew
 rlabel metal1 s 34701 25473 37895 25501 4 En100k
-port 42 nsew
+port 38 nsew
 rlabel metal1 s 34701 21417 37895 21445 4 En1k
-port 43 nsew
+port 39 nsew
 rlabel metal1 s 34701 25964 37895 25992 4 DivEn
-port 44 nsew
+port 40 nsew
 << properties >>
 string FIXED_BBOX 0 0 37895 39067
 << end >>
